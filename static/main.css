@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(187, 100, 100);
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+header {
+    background-color: #443636;
+    color: white;
+    padding: 20px; 
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer {
+    background-color: #443636;
+    color: white;
+    padding: 20px;
+    margin-top: 500px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
