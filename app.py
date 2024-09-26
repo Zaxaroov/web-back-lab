@@ -8,12 +8,13 @@ def start():
 
 @app.route("/menu")
 def menu():
-    return """
+    return '''
 <!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="''' + url_for('static', filename='main.css') + '''">
         <title>Захаров Илья Максимович, лабораторная 1</title>
     </head>
     <body>
@@ -30,23 +31,24 @@ def menu():
             </ol>
         </div>
 
-        <footer>
+        <footer class="footer">
             &copy; Захаров Илья, ФБИ-24, 3 курс, 2024 
         </footer>
     </body>
 </html>
-"""
+'''
 
 @app.route("/lab1")
 def lab1():
-    return """
+    return '''
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Захаров Илья Максимович, лабораторная 1</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="''' + url_for('static', filename='main.css') + '''">
+    <title>Захаров Илья Максимович, лабораторная 1</title>
+ </head>
     <body>
         <header>
             НГТУ, ФБ, Лабораторная работа 1
@@ -82,7 +84,7 @@ def lab1():
         </footer>
     </body>
 </html>
-"""
+'''
 
 @app.route("/lab1/oak")
 def oak():
@@ -90,7 +92,7 @@ def oak():
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="''' + url_for('static', filename='lab1.css') + '''">
+    <link rel="stylesheet" href="''' + url_for('static', filename='oak.css') + '''">
     <title>Дуб</title>
 </head>
     <body>
@@ -106,7 +108,7 @@ def student():
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" type="text/css" href="''' + url_for('static', filename='lab1.css') + '''">
+    <link rel="stylesheet" type="text/css" href="''' + url_for('static', filename='student.css') + '''">
     <title>Студент</title>
 </head>
 <body>
@@ -122,7 +124,7 @@ def python_info():
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" type="text/css" href="''' + url_for('static', filename='lab1.css') + '''">
+    <link rel="stylesheet" type="text/css" href="''' + url_for('static', filename='python.css') + '''">
     <title>Python</title>
 </head>
 <body>
@@ -155,7 +157,7 @@ def mfg():
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" type="text/css" href="''' + url_for('static', filename='lab1.css') + '''">
+    <link rel="stylesheet" type="text/css" href="''' + url_for('static', filename='crypto.css') + '''">
     <title>Melon Fashion Group</title>
 </head>
 <body>
